@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://cbjtcj6pxcn1e"]
+
+[ext_resource type="VideoStream" path="res://Pic/campany.ogv" id="1_vgvef"]
+[ext_resource type="Script" path="res://VideoStart1.gd" id="2_ocyhx"]
+[ext_resource type="Script" path="res://ButtonSkip.gd" id="3_d77ks"]
+
+[node name="VideoStart1" type="VideoStreamPlayer"]
+offset_right = 1152.0
+offset_bottom = 648.0
+stream = ExtResource("1_vgvef")
+autoplay = true
+expand = true
+script = ExtResource("2_ocyhx")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 600.0
+offset_right = 1150.0
+offset_bottom = 650.0
+scale = Vector2(1.01498, 0.972344)
+text = "SKIP"
+script = ExtResource("3_d77ks")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

@@ -1,0 +1,26 @@
+[gd_scene load_steps=4 format=3 uid="uid://4n67vniy30j2"]
+
+[ext_resource type="Script" path="res://VideoStart2.gd" id="1_d7v3c"]
+[ext_resource type="VideoStream" path="res://Pic/intro3.ogv" id="1_pftgg"]
+[ext_resource type="Script" path="res://ButtonSkip2.gd" id="3_n2vmn"]
+
+[node name="VideoStart2" type="VideoStreamPlayer"]
+offset_right = 1152.0
+offset_bottom = 648.0
+stream = ExtResource("1_pftgg")
+autoplay = true
+expand = true
+script = ExtResource("1_d7v3c")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 0
+offset_left = 1000.0
+offset_top = 600.0
+offset_right = 1150.0
+offset_bottom = 650.0
+scale = Vector2(1.01678, 0.961511)
+text = "SKIP"
+script = ExtResource("3_n2vmn")
+
+[connection signal="finished" from="." to="." method="_on_finished"]
+[connection signal="pressed" from="Button" to="Button" method="_on_pressed"]

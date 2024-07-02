@@ -1,0 +1,22 @@
+[gd_scene load_steps=2 format=3 uid="uid://b23fkh64a7e56"]
+
+[ext_resource type="Script" path="res://in_gamemenu.gd" id="1_t67lt"]
+
+[node name="InGamemenu" type="CanvasLayer"]
+script = ExtResource("1_t67lt")
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -64.0
+offset_right = 64.0
+offset_bottom = 48.0
+grow_horizontal = 2
+
+[node name="Exit" type="Button" parent="MarginContainer"]
+layout_mode = 2
+text = "Меню"
+
+[connection signal="pressed" from="MarginContainer/Exit" to="." method="_on_exit_pressed"]
+[connection signal="pressed" from="MarginContainer/Exit" to="." method="_on_button_pressed"]

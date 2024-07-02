@@ -1,0 +1,11 @@
+Button
+VideoStreamPlayer
+AnimationPlayer
+ParallaxLayer
+ParallaxBackground
+VBoxContainer
+MarginContainer
+CanvasLayer
+AudioStreamPlayer
+TouchScreenButton
+CharacterBody2D

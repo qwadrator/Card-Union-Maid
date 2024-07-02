@@ -1,0 +1,17 @@
+G:\Godot\CUM\.godot\mono\temp\bin\Debug\Card-Union-Maid.deps.json
+G:\Godot\CUM\.godot\mono\temp\bin\Debug\Card-Union-Maid.runtimeconfig.json
+G:\Godot\CUM\.godot\mono\temp\bin\Debug\Card-Union-Maid.dll
+G:\Godot\CUM\.godot\mono\temp\bin\Debug\Card-Union-Maid.pdb
+G:\Godot\CUM\.godot\mono\temp\bin\Debug\GodotSharp.dll
+G:\Godot\CUM\.godot\mono\temp\bin\Debug\GodotSharpEditor.dll
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\Card-Union-Maid.csproj.AssemblyReference.cache
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\Card-Union-Maid.GeneratedMSBuildEditorConfig.editorconfig
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\Card-Union-Maid.AssemblyInfoInputs.cache
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\Card-Union-Maid.AssemblyInfo.cs
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\Card-Union-Maid.csproj.CoreCompileInputs.cache
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\Card-Uni.D3E83CFA.Up2Date
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\Card-Union-Maid.dll
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\refint\Card-Union-Maid.dll
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\Card-Union-Maid.pdb
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\Card-Union-Maid.genruntimeconfig.cache
+G:\Godot\CUM\.godot\mono\temp\obj\Debug\ref\Card-Union-Maid.dll

@@ -1,0 +1,169 @@
+[gd_scene load_steps=8 format=3 uid="uid://dp4aqa08ex1fk"]
+
+[ext_resource type="Script" path="res://main_menu.gd" id="1_cr28c"]
+[ext_resource type="Texture2D" uid="uid://che74uqhwfpse" path="res://Pic/BG.png" id="2_n35d7"]
+[ext_resource type="Script" path="res://Continue.cs" id="3_ujqnx"]
+
+[sub_resource type="GDScript" id="GDScript_48r34"]
+script/source = "extends Sprite2D
+
+
+# Called when the node enters the scene tree for the first time.
+func _ready():
+	pass # Replace with function body.
+
+
+# Called every frame. 'delta' is the elapsed time since the previous frame.
+func _process(delta):
+	pass
+"
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_tm2b2"]
+content_margin_left = 5.0
+content_margin_top = 5.0
+content_margin_right = 5.0
+content_margin_bottom = 5.0
+bg_color = Color(0.00392157, 0.00392157, 0.00392157, 0.882353)
+border_width_left = 3
+border_width_top = 3
+border_width_right = 3
+border_width_bottom = 3
+border_color = Color(0.314316, 0.314316, 0.314316, 1)
+corner_radius_top_left = 7
+corner_radius_top_right = 7
+corner_radius_bottom_right = 7
+corner_radius_bottom_left = 7
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_wx7ln"]
+bg_color = Color(0.0588235, 0.0588235, 0.0588235, 0.980392)
+border_width_left = 5
+border_width_top = 5
+border_width_right = 5
+border_width_bottom = 5
+border_color = Color(0.522449, 0.803048, 0.846381, 0.988235)
+corner_radius_top_left = 3
+corner_radius_top_right = 3
+corner_radius_bottom_right = 3
+corner_radius_bottom_left = 3
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_beyo7"]
+bg_color = Color(0.160784, 0.160784, 0.160784, 0.882353)
+border_width_left = 2
+border_width_top = 2
+border_width_right = 2
+border_width_bottom = 2
+border_color = Color(6.54578e-06, 0.814879, 0.944627, 1)
+corner_radius_top_left = 2
+corner_radius_top_right = 2
+corner_radius_bottom_right = 2
+corner_radius_bottom_left = 2
+
+[node name="MainMenu" type="CanvasLayer"]
+script = ExtResource("1_cr28c")
+
+[node name="Bg" type="Sprite2D" parent="."]
+position = Vector2(576, 324)
+scale = Vector2(0.45, 0.45)
+texture = ExtResource("2_n35d7")
+script = SubResource("GDScript_48r34")
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="MarginContainer" type="MarginContainer" parent="."]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_top = -648.0
+offset_right = 288.0
+grow_vertical = 0
+theme_override_constants/margin_left = 40
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer"]
+layout_mode = 2
+size_flags_vertical = 8
+theme_override_constants/separation = 20
+
+[node name="Continue" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.522449, 0.803048, 0.846381, 0.988235)
+theme_override_colors/font_hover_color = Color(6.54578e-06, 0.814879, 0.944627, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_tm2b2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wx7ln")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_beyo7")
+text = "Продолжить"
+text_overrun_behavior = 2
+script = ExtResource("3_ujqnx")
+
+[node name="StartGame" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.522449, 0.803048, 0.846381, 0.988235)
+theme_override_colors/font_hover_color = Color(6.54578e-06, 0.814879, 0.944627, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_tm2b2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wx7ln")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_beyo7")
+text = "Новая игра"
+text_overrun_behavior = 2
+
+[node name="Loop" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.522449, 0.803048, 0.846381, 0.988235)
+theme_override_colors/font_hover_color = Color(6.54578e-06, 0.814879, 0.944627, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_tm2b2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wx7ln")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_beyo7")
+text = "Статистика"
+text_overrun_behavior = 2
+
+[node name="Info" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.522449, 0.803048, 0.846381, 0.988235)
+theme_override_colors/font_hover_color = Color(6.54578e-06, 0.814879, 0.944627, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_tm2b2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wx7ln")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_beyo7")
+text = "Информация"
+text_overrun_behavior = 2
+
+[node name="Settings" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.522449, 0.803048, 0.846381, 0.988235)
+theme_override_colors/font_hover_color = Color(6.54578e-06, 0.814879, 0.944627, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_tm2b2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wx7ln")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_beyo7")
+text = "Настройки"
+text_overrun_behavior = 2
+
+[node name="Exit" type="Button" parent="MarginContainer/VBoxContainer"]
+layout_mode = 2
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.522449, 0.803048, 0.846381, 0.988235)
+theme_override_colors/font_hover_color = Color(6.54578e-06, 0.814879, 0.944627, 1)
+theme_override_constants/outline_size = 1
+theme_override_font_sizes/font_size = 17
+theme_override_styles/normal = SubResource("StyleBoxFlat_tm2b2")
+theme_override_styles/hover = SubResource("StyleBoxFlat_wx7ln")
+theme_override_styles/pressed = SubResource("StyleBoxFlat_beyo7")
+text = "Выход "
+text_overrun_behavior = 2
+
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Continue" to="." method="_on_continue_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/StartGame" to="." method="_on_start_game_pressed"]
+[connection signal="pressed" from="MarginContainer/VBoxContainer/Exit" to="." method="_on_exit_pressed"]

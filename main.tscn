@@ -1,0 +1,14 @@
+[gd_scene load_steps=3 format=3 uid="uid://dmp0ap7np45yb"]
+
+[ext_resource type="PackedScene" uid="uid://cwlqxmhck7gyl" path="res://player.tscn" id="1_saeo6"]
+[ext_resource type="PackedScene" uid="uid://b23fkh64a7e56" path="res://in_gamemenu.tscn" id="2_qb8pj"]
+
+[node name="Main" type="Node2D"]
+position = Vector2(0, 2)
+
+[node name="Player" parent="." instance=ExtResource("1_saeo6")]
+position = Vector2(-1, 36)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+
+[node name="InGamemenu" parent="." instance=ExtResource("2_qb8pj")]

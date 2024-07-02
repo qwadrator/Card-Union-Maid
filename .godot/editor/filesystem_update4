@@ -1,0 +1,9 @@
+res://main.tscn
+res://player.tscn
+res://click.tscn
+res://main_menu.tscn
+res://in_gamemenu.tscn
+res://video_start_1.tscn
+res://video_start_2.tscn
+res://ButtonSkip.gd
+res://ButtonSkip2.gd
